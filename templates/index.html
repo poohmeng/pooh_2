@@ -1,0 +1,26 @@
+{%extends "base.html"%}
+{%block title%}home{%endblock%}
+{%block page%}poohmeng{%endblock%}
+{% block page_header %}
+    <a class="navbar-brand" href="{% url 'index' %}">meng</a>
+    <div class="nav-collapse collapse">
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="{% url 'index' %}">主页</a></li>
+            <li><a href="{% url 'about' %}">我的简历</a></li>
+            <li><a href="{% url 'contact' %}">社交</a></li>
+        </ul>
+
+    </div><!--/.nav-collapse -->
+{% endblock %}
+
+
+
+{% block content %}
+    aaaa
+
+
+{% endblock %}
+
+
+
+

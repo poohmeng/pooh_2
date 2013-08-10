@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>{% block title %}{% endblock %} | {% block page %}{% endblock %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Le styles -->
+{% load staticfiles %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css' %}" />
+<link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap-responsive.css' %}" />
+<link rel="stylesheet" type="text/css" href="{% static 'css/docs.css' %}" />
+<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" />
+<link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}" />
+<link rel="stylesheet" type="text/css" href="{% static 'css/font-awesome.min.css' %}" />
+<!--[if IE 7]>
+  <link rel="stylesheet" type="text/css" href="{% static 'css/font-awesome-ie7.min.css' %}" />
+<![endif]-->
+
+    <script type="text/javascript" language="javascript"
+            src="/static/js/jquery-1.9.1.min.js"></script>
+    <style>
+            /* Sticky footer styles
+        -------------------------------------------------- */
+
+        html,
+        body {
+            padding-top: 60px;
+            /* 60px to make the container go all the way to the bottom of the topbar */
+            height: 100%;
+            /* The html and body elements cannot have any padding or margin. */
+        }
+
+            /* Wrapper for page content to push down footer */
+        #wrap {
+            min-height: 100%;
+            height: auto !important;
+            height: 100%;
+            /* Negative indent footer by it's height */
+            margin: 0 auto -60px;
+        }
+
+            /* Set the fixed height of the footer here */
+        #push,
+        #footer {
+            height: 160px;
+            text-align: center;
+        }
+
+        #footer {
+            background-color: #FFFAFA;
+        }
+
+            /* Lastly, apply responsive CSS fixes as necessary */
+        @media (max-width: 767px) {
+            #footer {
+                margin-left: -20px;
+                margin-right: -20px;
+                padding-left: 20px;
+                padding-right: 20px;
+                text-align: center;
+            }
+        }
+
+            /* Custom page CSS
+            -------------------------------------------------- */
+            /* Not required for template or sticky footer method. */
+
+        .container {
+            width: auto;
+            max-width: 700px;
+        }
+
+        .container .credit {
+            margin: 20px 0;
+        }
+    </style>
+    {% block othercss %}{% endblock %}
+    {% block otherjs %}{% endblock %}
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-43092231-2', 'sinaapp.com');
+  ga('send', 'pageview');
+
+</script>
+</head>
+
+<body>
+<div id="wrap">
+    <div class="container">
+        <div class="navbar navbar-inverse navbar-fixed-top">
+                <div class="container">
+                    {% block page_header %}
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    {% endblock %}
+                </div>
+        </div>
+    </div>
+    <div class="container">
+        {% block content %}{% endblock %}
+    </div>
+    <div id="push"></div>
+</div>
+
+<div id="footer">
+    <div class="container">
+        <br>
+        更多
+        <ul class="footer-links">
+            <li class="muted">&middot;</li>
+            <li><a href="http://www.douban.com/people/poohmeng/" target="_blank">我的豆瓣</a></li>
+            <li class="muted">&middot;</li>
+            <li><a href="http://poohmeng.sinaapp.com/" target="_blank">我的博客</a></li>
+            <li class="muted">&middot;</li>
+            <li><a href="http://about.me/poohmeng/" target="_blank">个人名片</a></li>
+        </ul>
+
+        <p>&copy; Copyright poohmeng
+            </p><br/>
+
+    </div>
+</div>
+
+
+<!-- Le javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="../assets/js/jquery.js"></script>
+<script src="../assets/js/bootstrap-transition.js"></script>
+<script src="../assets/js/bootstrap-alert.js"></script>
+<script src="../assets/js/bootstrap-modal.js"></script>
+<script src="../assets/js/bootstrap-dropdown.js"></script>
+<script src="../assets/js/bootstrap-scrollspy.js"></script>
+<script src="../assets/js/bootstrap-tab.js"></script>
+<script src="../assets/js/bootstrap-tooltip.js"></script>
+<script src="../assets/js/bootstrap-popover.js"></script>
+<script src="../assets/js/bootstrap-button.js"></script>
+<script src="../assets/js/bootstrap-collapse.js"></script>
+<script src="../assets/js/bootstrap-carousel.js"></script>
+<script src="../assets/js/bootstrap-typeahead.js"></script>
+
+</body>
+</html>

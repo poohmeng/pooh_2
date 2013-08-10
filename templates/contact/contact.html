@@ -1,0 +1,82 @@
+{% extends "base.html" %}
+{% block title %}sns{% endblock %}
+{% block page %}poohmeng{% endblock %}
+
+{% block page_header %}
+
+    <a class="navbar-brand" href="{% url 'index' %}">meng</a>
+    <div class="nav-collapse collapse">
+        <ul class="nav navbar-nav">
+            <li><a href="{% url 'index' %}">主页</a></li>
+            <li><a href="{% url 'about' %}">我的简历</a></li>
+            <li class="active"><a href="{% url 'contact' %}">社交</a></li>
+        </ul>
+
+    </div><!--/.nav-collapse -->
+{% endblock %}
+{% block content %}
+    <div class="container">
+        <div class="author_bio_sidebar">
+            <div class="social_box">
+                <a href="http://poohmeng.tumblr.com" target="_blank">
+                    <i class=" icon-tumblr-sign"></i></a>
+                <br>
+                <a href="https://twitter.com/poohmeng" target="_blank">
+                    <i class="icon-twitter"></i></a>
+                <br>
+                <a href="https://www.facebook.com/poohmeng" target="_blank">
+                    <i class="icon-facebook"></i></a>
+                <br>
+                <a href="https://plus.google.com/115654056182558456136" target="_blank">
+                    <i class="icon-google-plus"></i></a>
+                <br>
+                <a href="http://www.linkedin.com/pub/meng-meng/30/930/a5" target="_blank">
+                    <i class="icon-linkedin"></i></a>
+                <br>
+                <a href="http://weibo.com/poohmeng" target="_blank">
+                    <i class="icon-weibo"></i></a>
+                <br>
+                <a href="https://github.com/poohmeng" target="_blank">
+                    <i class="icon-github-sign"></i></a>
+            </div>
+            {#            <legend>contact</legend>#}
+            {#            {% if form.errors %}#}
+            {#                <p style="color: red;">#}
+            {#                    Please correct the error{{ form.errors|pluralize }} below.#}
+            {#                </p>#}
+            {#            {% endif %}#}
+            {#            <form class="form-horizontal" action="" method="POST">{% csrf_token %}#}
+            {#                <div class="control-group">#}
+            {#                    {{ form.subject.errors }}#}
+            {#                    <label class="control-label">subject</label>#}
+            {##}
+            {#                    <div class="controls">#}
+            {#                        <input type="text" class="form-control" placeholder="Input a subject..." name="subject">#}
+            {#                    </div>#}
+            {#                    <br>#}
+            {#                    {{ form.message.errors }}#}
+            {#                    <label class="control-label">message</label>#}
+            {##}
+            {#                    <div class="controls">#}
+            {#                        <textarea rows="6" class="form-control" name="message"></textarea>#}
+            {#                    </div>#}
+            {#                    <br>#}
+            {#                    {{ form.from_email.errors }}#}
+            {#                    <label class="control-label">Email</label>#}
+            {##}
+            {#                    <div class="controls">#}
+            {#                        <input type="text" class="form-control" placeholder="Input a email..." name="from_email">#}
+            {#                    </div>#}
+            {#                </div>#}
+            {#                <br>#}
+            {##}
+            {#                <div class="control-group">#}
+            {#                    <div class="controls">#}
+            {#                        <button id="btn_submit" type="submit" class="btn btn-primary">提交内容</button>#}
+            {#                    </div>#}
+            {#                </div>#}
+            {##}
+            {#            </form>#}
+        </div>
+    </div>
+{% endblock %}

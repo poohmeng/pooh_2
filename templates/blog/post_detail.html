@@ -1,0 +1,10 @@
+{% extends "blog/base.html" %}
+
+{% block page_title %} {{ post.title }} | {% endblock %}
+
+{% block page_content %}
+<h2>{{ post.content }}</h2>
+<p>
+<p>{{ post.update_at }}</p>
+<a class="btn" href="{% url 'blog:list' %}">&larr; Blog list</a>
+{% endblock %}

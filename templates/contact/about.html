@@ -1,0 +1,187 @@
+{% extends "base.html" %}
+{% block title %}about{% endblock %}
+{% block page %}poohmeng{% endblock %}
+{% block othercss %}
+
+{% endblock %}
+{% block page_header %}
+    <a class="navbar-brand" href="{% url 'index' %}">meng</a>
+    <div class="nav-collapse collapse">
+        <ul class="nav navbar-nav">
+            <li><a href="{% url 'index' %}">主页</a></li>
+            <li class="active"><a href="{% url 'about' %}">我的简历</a></li>
+            <li><a href="{% url 'contact' %}">社交</a></li>
+        </ul>
+
+    </div><!--/.nav-collapse -->
+{% endblock %}
+{% block content %}
+    <div class="container">
+    <div class="panel">
+        <div class="row">
+
+
+            <div class="col-lg-1"></div>
+            <div class="col-lg-8">
+                <h3 class="text-info">孟梦</h3>
+                <h5 class="text-info">女 | 满族 | 1989年6月 | 双子座B型血 | 籍贯：北京市</h5>
+                <h5 class="text-info">poohmeng@gmail.com</h5>
+                <h5 class="text-info">18611895110</h5>
+            </div>
+            <div class="col-lg-3">
+                <img src="/static/img/myavatar.JPG" class="img-thumbnail" width="120" height="150">
+            </div>
+
+        </div>
+             </div>
+        <br>
+        <div class="panel panel-info">
+            <!-- Default panel contents -->
+            <div class="panel-heading"><h4 class="text-primary">求职意向及说明</h4></div>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <p>求职意向：产品专员</p>
+                </li>
+
+                <li class="list-group-item">
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2011年7月毕业至今有两年工作经验，
+                        做研发相关的工作， 有技术基础，在学习技术的过程中，我体会到了学习技术的乐趣， 遇到问题
+                        利用google解决，去stackoverflow找寻答案，但是利用了近两年的时间，我发现编程写代码是
+                        我的兴趣爱好， 而不是能够让我一直做5年做10年最终有所突破的事情。通过阅读了一些产品相关
+                        的书籍，以及平时关注的一些国内、国外的互联网社区，使我对产品经理这一全能型的职业从最初
+                        的好奇，到逐步了解，尝试动手做一个简单的app产品原型、写产品需求文档，逐渐有了认识，
+                        希望能有机会进入一家公司产品部，更好的实践。
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <div class="panel panel-danger">
+            <!-- Default panel contents -->
+            <div class="panel-heading"><h4 class="text-danger">工作经验</h4></div>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <h5>Python工程师</h5>
+                    <h5>北京一朵云文化咨询有限公司（91外教） | 2013年5月 至 2013年7月</h5>
+
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;参与学科项目开发，
+                        使用django1.5框架，Mysql数据库，根据产品原型及现有代码完成教师后台部分。</p>
+                </li>
+                <li class="list-group-item">
+                    <h5>Java工程师</h5>
+                    <h5>北京东方正通科技有限公司 | 2011年8月 至 2013年4月</h5>
+
+                    <p>2011年8月-2012年6月 软件研发中心</p>
+
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;配合项目经理编写项目用户手册，
+                        编写视频录制脚本，进行培训视频的录制、剪辑工作，参与客户培训。</p>
+
+                    <p>2012年7月-2013年4月 应用产品事业部</p>
+
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;部门主要工作是将原有的项目系统
+                        经过改造整合成产品，再通过个性化定制的方式卖给客户，我主要负责项目文档整合的工作，
+                        针对系统各功能模块修改文档，并制作产品宣传视频。</p>
+
+                    <p>开发部门内部管理系统：</p>
+
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;数据库使用Mysql、使用Grails
+                        框架、前端使用Twitter Bootstrap。</p>
+
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;功能：实现了增删查改和文件上传、
+                        下载。有加班单外出单审批功能，午餐选餐功能。</p>
+
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;说明：部门内部10人使用，
+                        是一个利用grails框架快速开发小的web应用，
+                        根据部门同事的使用需求不断改进完善。</p>
+                </li>
+            </ul>
+        </div>
+        <div class="panel panel-warning">
+            <!-- Default panel contents -->
+            <div class="panel-heading"><h4 class="text-warning">教育</h4></div>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <h5>本科 信息与计算科学</h5>
+                    <h5>北京建筑大学 | 2007年 至 2011年 </h5>
+                </li>
+
+            </ul>
+        </div>
+        <div class="panel panel-success">
+            <!-- Default panel contents -->
+            <div class="panel-heading"><h4 class="text-success">技能</h4></div>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <h5>Web开发：</h5>
+
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;熟悉 Python 语言，常用的函数，能够进行Django项目开发</p>
+
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;熟悉HTML、CSS</p>
+
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;熟悉JSP、Servlet、JavaBean进行web应用开发</p>
+
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;熟悉基于Struts框架，MVC模式的Java Web编程</p>
+
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;熟悉基于Grails框架的Web开发</p>
+
+                </li>
+                <li class="list-group-item">
+                    <h5>数据库：</h5>
+
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;能够使用MySQL数据库</p>
+                </li>
+                <li class="list-group-item">
+                    <h5>其他：</h5>
+
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;能够使用Axure</p>
+
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;使用CamtasiaStudio进行视频剪辑</p>
+
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;具备良好的英文阅读能力，能够顺畅地阅读英文技术文档 </p>
+
+
+                </li>
+
+            </ul>
+        </div>
+        <div class="panel panel-info">
+            <!-- Default panel contents -->
+            <div class="panel-heading"><h4 class="text-info">证书及奖项</h4></div>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <h5>英语六级</h5>
+                </li>
+                <li class="list-group-item">
+                    <h5>2008-2009学年度奖学金</h5>
+                </li>
+            </ul>
+        </div>
+        <div class="panel panel-danger">
+            <!-- Default panel contents -->
+            <div class="panel-heading"><h4 class="text-danger">自我评价及爱好</h4></div>
+            <ul class="list-group">
+                <li class="list-group-item">
+
+                    <p>性格开朗、待人热情、真诚，有积极乐观的生活态度
+
+                    <p>
+
+                    <p>工作认真细致，执行力强，有责任心</p>
+                    善于学习，有较好的独立分析和解决问题的能力。</p>
+
+                </li>
+                <li class="list-group-item">
+
+                    <p>日常使用Mac，爱苹果，爱新鲜产品</p>
+
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    {{ html }}
+    </div>
+{% endblock %}
+
+
+
+
